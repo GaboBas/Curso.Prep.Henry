@@ -82,14 +82,14 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  var esta = false;
+  /* var esta = false;
   for (const clave in objeto) {
     if(clave===propiedad){
       esta = true;
     }
-    }
-    //return objeto.hasOwnProperty(propiedad);
-    return esta;
+    } */
+    return objeto.hasOwnProperty(propiedad);
+    /* return esta; */
   }
   
 

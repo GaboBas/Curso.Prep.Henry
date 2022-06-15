@@ -263,9 +263,20 @@ function breakStatement(numero) {
   // Tu código:
 
   let array = [];
-  let n = 0;
+/*   let n = 0; */
   
-  while(n<10){
+  for (let i = 0; i < 10; i++) {
+    numero = numero + 2
+    if (i===numero) {
+      return 'Se interrumpió la ejecución';
+      
+    } 
+    array.push(numero);
+    
+
+  }
+  return array;
+/*   while(n<10){
     n++
     numero = numero+2;
     array.push(numero);
@@ -280,7 +291,7 @@ function breakStatement(numero) {
     return array;
   } else{
     return 'Se interrumpió la ejecución';
-  }
+  } */
 }
 
 
